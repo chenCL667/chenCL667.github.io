@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
+    <title><![CDATA[Kubernetes指令(以pod为例)]]></title>
     <url>%2F2019%2F05%2F10%2FKubernetes%E6%8C%87%E4%BB%A4(%E4%BB%A5pod%E4%B8%BA%E4%BE%8B)%2F</url>
-    <content type="text"><![CDATA[Kubernetes指令(以pod为例)1、get指令#获取所有namespace中的pod对象 （如果没有加上namespace信息，则获取default命名空间的pod信息） kuberctl get pod –all-namespace kuberctl get pod #获取某个namespace中所有的pod对象（namespace为test） kuberctl get pod -n test #获取某个namespace中特定pod对象 （已知pod name,例如pod name = mysql-68ac678-456b67d, namespace=test） kuberctl get pod mysql-68ac678-456b67d -n test #如果想获取更加详细的信息，可以加上参数 -o wide ，或者 -o yaml（直接获取pod的yaml文件） （已知pod name,例如pod name = mysql-68ac678-456b67d, namespace=test） kuberctl get pod mysql-68ac678-456b67d -n test -o wide kuberctl get pod mysql-68ac678-456b67d -n test -o yaml kuberctl get pod -n test -o wide kuberctl get pod -n test -o yaml kuberctl get pod –all-namespace -o wide kuberctl get pod –all-namespace -o yaml]]></content>
+    <content type="text"><![CDATA[1、get指令#获取所有namespace中的pod对象 （如果没有加上namespace信息，则获取default命名空间的pod信息） 123kuberctl get pod --all-namespacekuberctl get pod #获取某个namespace中所有的pod对象（namespace为test） 1kuberctl get pod -n test #获取某个namespace中特定pod对象 （已知pod name,例如pod name = mysql-68ac678-456b67d, namespace=test） 1kuberctl get pod mysql-68ac678-456b67d -n test #如果想获取更加详细的信息，可以加上参数 -o wide ，或者 -o yaml（直接获取pod的yaml文件） （已知pod name,例如pod name = mysql-68ac678-456b67d, namespace=test） 1234567891011kuberctl get pod mysql-68ac678-456b67d -n test -o widekuberctl get pod mysql-68ac678-456b67d -n test -o yamlkuberctl get pod -n test -o widekuberctl get pod -n test -o yamlkuberctl get pod --all-namespace -o widekuberctl get pod --all-namespace -o yaml]]></content>
+      <categories>
+        <category>Kubernetes</category>
+      </categories>
+      <tags>
+        <tag>Kubernetes指令</tag>
+        <tag>Linux</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>

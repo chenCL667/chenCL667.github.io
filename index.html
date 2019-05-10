@@ -310,7 +310,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/05/10/Kubernetes指令(以pod为例)/" itemprop="url">Untitled</a></h1>
+                <a class="post-title-link" href="/2019/05/10/Kubernetes指令(以pod为例)/" itemprop="url">Kubernetes指令(以pod为例)</a></h1>
         
 
         <div class="post-meta">
@@ -332,6 +332,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Kubernetes/" itemprop="url" rel="index">
+                    <span itemprop="name">Kubernetes</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -361,15 +383,14 @@
 
       
         
-          <h3 id="Kubernetes指令-以pod为例"><a href="#Kubernetes指令-以pod为例" class="headerlink" title="Kubernetes指令(以pod为例)"></a>Kubernetes指令(以pod为例)</h3><h4 id="1、get指令"><a href="#1、get指令" class="headerlink" title="1、get指令"></a>1、get指令</h4><p>#获取所有namespace中的pod对象</p>
+          <h3 id="1、get指令"><a href="#1、get指令" class="headerlink" title="1、get指令"></a>1、get指令</h3><p>#获取所有namespace中的pod对象</p>
 <p>（如果没有加上namespace信息，则获取default命名空间的pod信息）</p>
-<p>kuberctl get  pod  –all-namespace</p>
-<p>kuberctl get  pod </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">kuberctl get  pod  --all-namespace</span><br><span class="line"></span><br><span class="line">kuberctl get  pod</span><br></pre></td></tr></table></figure>
 <p>#获取某个namespace中所有的pod对象（namespace为test）</p>
-<p>kuberctl get  pod  -n  test </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kuberctl get  pod  -n  <span class="built_in">test</span></span><br></pre></td></tr></table></figure>
 <p>#获取某个namespace中特定pod对象</p>
 <p>（已知pod name,例如pod name = mysql-68ac678-456b67d, namespace=test）</p>
-<p>kuberctl get  pod mysql-68ac678-456b67d  -n test</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kuberctl get  pod mysql-68ac678-456b67d  -n <span class="built_in">test</span></span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/05/10/Kubernetes指令(以pod为例)/#more" rel="contents">
@@ -616,7 +637,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -627,7 +648,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
