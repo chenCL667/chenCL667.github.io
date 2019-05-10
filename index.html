@@ -291,6 +291,138 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/10/Kubernetes指令(以pod为例)/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cailin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="chen's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/05/10/Kubernetes指令(以pod为例)/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-10T16:39:28+08:00">
+                2019-05-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="Kubernetes指令-以pod为例"><a href="#Kubernetes指令-以pod为例" class="headerlink" title="Kubernetes指令(以pod为例)"></a>Kubernetes指令(以pod为例)</h3><h4 id="1、get指令"><a href="#1、get指令" class="headerlink" title="1、get指令"></a>1、get指令</h4><p>#获取所有namespace中的pod对象</p>
+<p>（如果没有加上namespace信息，则获取default命名空间的pod信息）</p>
+<p>kuberctl get  pod  –all-namespace</p>
+<p>kuberctl get  pod </p>
+<p>#获取某个namespace中所有的pod对象（namespace为test）</p>
+<p>kuberctl get  pod  -n  test </p>
+<p>#获取某个namespace中特定pod对象</p>
+<p>（已知pod name,例如pod name = mysql-68ac678-456b67d, namespace=test）</p>
+<p>kuberctl get  pod mysql-68ac678-456b67d  -n test</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/05/10/Kubernetes指令(以pod为例)/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/02/hello-world/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -473,7 +605,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
